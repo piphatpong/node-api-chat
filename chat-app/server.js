@@ -35,7 +35,7 @@ db.mongoose
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
+  res.json({ message: "Enjoy to CHAT application." });
 });
 
 require("./app/member-routes/member.routes")(app);

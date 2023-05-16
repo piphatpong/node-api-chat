@@ -18,7 +18,7 @@ module.exports = mongoose => {
       return object;
     });
   
-    const Member = mongoose.model("members", schema);
+    const Member = mongoose.model("chat-collection", schema);
     return Member;
   };
   
