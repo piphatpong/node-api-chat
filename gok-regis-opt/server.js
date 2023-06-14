@@ -16,7 +16,7 @@ app.use(express.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
 
-const db = require("./app/member-models");
+const db = require("./app/register-models/register-model");
 
 console.log(db.url);
 
@@ -35,10 +35,10 @@ db.mongoose
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Enjoy to CHAT application." });
+  res.json({ message: "Googkik.com Register new members." });
 });
 
-require("./app/member-routes/member.routes")(app);
+require("./app/register-routes/register.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.NODE_DOCKER_PORT || 8080;

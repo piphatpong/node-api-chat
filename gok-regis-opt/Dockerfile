@@ -1,6 +1,6 @@
 FROM node:14
 
-WORKDIR /chat-app
+WORKDIR /gok-regis-opt
 COPY package.json .
 RUN npm install
 COPY . .
