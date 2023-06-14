@@ -57,16 +57,16 @@ module.exports = app => {
 
   //----------------------------------------//
 
-  app.use("/api/chats", chat);
+  //app.use("/api/chats", chat);
 
   // Find user by id
-  chat.get("/", registers.findAll);
+  //chat.get("/", registers.findAll);
 
   // Update user info by id
-  chat.get("/:id", registers.findOne);
+  //chat.get("/:id", registers.findOne);
 
   // Create a new Tutorial
-  chat.post("/", registers.create);
+  //chat.post("/", registers.create);
 
 
 };
